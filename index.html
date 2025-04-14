@@ -20,6 +20,9 @@
             <div class="nav-logo">
                 <i class="fa-brands fa-spotify"></i>
             </div>
+            <div class="nav-home">
+                <i class="fa-solid fa-house"></i>
+            </div>
             <div class="search-bar">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="What do you want to play?">
@@ -28,8 +31,10 @@
                 <a href="#">Premium</a>
                 <a href="#">Support</a>
                 <a href="#">Download</a>
-                <button>Log in</button>
-                <button>Sign up</button>
+                <div class="header-btn">
+                    <button class="btn-sign-up">Sign up</button>
+                    <button class="btn-log-in">Log in</button>
+                </div>
             </div>
         </div>
     </header>
@@ -37,8 +42,8 @@
     <div class="container">
         <nav class="sidebar">
             <div class="nav-library">
-                <i class="fa-solid fa-book"></i>
-                <p>Sua Biblioteca +</p>
+                <p>Sua Biblioteca</p>
+                <i class="fa-solid fa-plus"></i>
             </div>
             <div class="nav-playlist">
                 <h5>Crie sua Primeira Playlist</h5>
@@ -50,29 +55,41 @@
                 <p>Avisaremos você sobre nossos episodios</p>
                 <button class="nav-btn">Explore os Podcasts</button>
             </div>
-            <div class="nav-footer">
-                <a href="#">Legal</a>
-                <a href="#">Centro de Privacidade</a>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Cookies</a>
-                <a href="#">Sobre Anuncios</a>
-                <a href="#">Acessibilidade</a>
+            <div class="footer">
+                <div class="nav-footer">
+                    <a href="#">Legal</a>
+                    <a href="#">Centro de Privacidade</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Sobre Anuncios</a>
+                    <a href="#">Acessibilidade</a>
+                </div>
+                <a class="cookies" href="#">Cookies</a>
+                <button class="nav-lang-btn">
+                    <i class="fa-solid fa-globe"></i>
+                    Português do Brasil
+                </button>
             </div>
-            <button class="nav-lang-btn">
-                <i class="fa-solid fa-globe"></i>
-                Português do Brasil
-            </button>
         </nav>
-        <main>
-            <section class="content">
-                <h2>Artistas Populares</h2>
-                <div class="artists-grid"></div>
-
-                <h2>Álbuns Populares</h2>
-                <div class="albums-grid"></div>
-            </section>
-        </main>
+        <div class="main-wrapper">
+            <main>
+                <section class="content">
+                    <h2>Artistas Populares</h2>
+                    <div class="artists-grid"></div>
+    
+                    <h2>Álbuns Populares</h2>
+                    <div class="albums-grid"></div>
+                </section>
+            </main>
+        </div>
     </div>
+    <footer class="footer2">
+        <div class="footer-text">
+            <h5>Preview of Spotify</h5>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        <button class="btn-footer">Sign Up Free</button>
+    </footer>
 </body>
 <script src="script.js"></script>
 

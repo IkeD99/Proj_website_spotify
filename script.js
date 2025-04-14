@@ -25,9 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const artistCard = document.createElement('div');
         artistCard.classList.add('artist-card');
         artistCard.innerHTML = `
-            <img src="${artist.image}" alt="${artist.name}">
-            <h3>${artist.name}</h3>
-            <p>Artist</p>
+            <div class="image-wrapper">
+                <img src="${artist.image}" alt="${artist.name}">
+                <button class="play-button">▶</button>
+            </div>
+            <div>
+                <h3>${artist.name}</h3>
+                <p>Artist</p>
+            </div>
         `;
         artistGrid.appendChild(artistCard);
     });
@@ -36,9 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const albumCard = document.createElement('div');
         albumCard.classList.add('album-card');
         albumCard.innerHTML = `
-            <img src="${album.image}" alt="${album.name}">
-            <h3>${album.name}</h3>
-            <p>${album.artist}</p>
+            <div class="image-wrapper">
+                <img src="${album.image}" alt="${album.name}">
+                <button class="play-button">▶</button>
+            </div>
+            <div>
+                <h3>${album.name}</h3>
+                <p>${album.artist}</p>
+            </div>
         `;
         albumGrid.appendChild(albumCard);
     });
